@@ -1,0 +1,24 @@
+{
+  "name": "server-api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Навчальний додаток: streaming SSR галерея на renderToPipeableStream",
+  "scripts": {
+    "build:client": "esbuild client/client.tsx --bundle --outfile=public/client.js --format=esm --jsx=automatic --log-level=info",
+    "watch:client": "esbuild client/client.tsx --bundle --outfile=public/client.js --format=esm --jsx=automatic --watch",
+    "start": "tsx server/server.tsx",
+    "dev": "npm run build:client && tsx watch server/server.tsx"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "esbuild": "^0.24.0",
+    "tsx": "^4.19.0"
+  }
+}
