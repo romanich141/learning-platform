@@ -8,7 +8,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest run",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
     "lint": "oxlint",
@@ -22,6 +22,7 @@
     "typescript": "^7.0.2"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "oxfmt": "^0.61.0",
     "oxlint": "^1.76.0",
     "vitest": "^4.1.10"
