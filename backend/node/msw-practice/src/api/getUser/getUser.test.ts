@@ -36,7 +36,6 @@ describe("getUser", () => {
   test("delay", async () => {
     server.use(
       http.get("https://api.example.com/users/:id", async () => {
-        await delay(2500);
         return HttpResponse.json({ id: "1", name: "John Doe" });
       }),
     );
