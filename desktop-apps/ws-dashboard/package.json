@@ -9,5 +9,8 @@
       "onFail": "download"
     }
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "turbo": "^2.10.12"
+  }
 }
