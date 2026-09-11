@@ -1,0 +1,13 @@
+{
+  "name": "ws-dashboard",
+  "version": "1.0.0",
+  "private": "true",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.3.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module"
+}
